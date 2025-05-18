@@ -1,3 +1,71 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+input,
+textarea {
+  all: revert;
+  outline: none;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1168px;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 355px) {
+  .container {
+    width: 355px;
+  }
+}
+@media screen and (min-width: 736px) {
+  .container {
+    width: 736px;
+    padding: 0 16px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .container {
+    width: 1168px;
+  }
+}
+
 body {
   font-family: "Montserrat";
 }/*# sourceMappingURL=main.css.map */
