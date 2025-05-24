@@ -39,7 +39,8 @@
   &__icon {
     width: 21px;
     height: 21px;
-    fill: $button-color;
+    stroke: $button-color;
+    fill: #fcf1e0;
 
     @media screen and (min-width: 1168px) {
       width: 24px;
@@ -93,6 +94,8 @@
     &__icon {
       width: 24px;
       height: 24px;
+      fill: transparent;
+      stroke: $text-color;
     }
   }
 
@@ -110,6 +113,7 @@
     &__icon {
       width: 28px;
       height: 28px;
+      stroke: black;
 
       @media screen and (min-width: 736px) {
         width: 32px;
