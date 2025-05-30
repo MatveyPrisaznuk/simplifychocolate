@@ -183,4 +183,26 @@ body {
     width: 32px;
     height: 32px;
   }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e1823;
+  padding: 40px;
+  color: white;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.information_item {
+  flex: 1;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.divider {
+  width: 1px;
+  background-color: #333;
+  margin: 0 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,11 +1,97 @@
-.information{
-background-color: #1E1823;
+.information {
+  background-color: #1e1b22;
+  color: #ffffff;
+  font-family: "Montserrat";
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  @media screen and (min-width: 736px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-    .information_item{
-            display: flex;
-width: 308px;
-height: 244px;
-flex-direction: column;
-align-items: flex-start;
-gap: 22px;
+}
+.information_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+.information_list {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+  box-sizing: border-box;
+  padding-right: 20px;
+} 
+.information__border {
+  width: 1px;
+  height: 124px;
+  background-color: $rectangle-color;
+}
+.information_list:last-child {
+  border-right: none;
+}
+.information_icon {
+  width: 62px;
+  height: 62px;
+  border: 2px solid #4c4c4c;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  fill: #fd9222;
+}
+.information_svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.information_caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.information_subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cfcfcf;
+  @media screen and (min-width: 736px) {
+    width: 308px;
+    height: 160px;
+  }
+}
+.information_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 1168px) {
+  .information_list:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 124px;
+    width: 1px;
+    background-color: #4c4c4c;
+  }
+  .information_list {
+    position: relative;
+    padding-right: 40px;
+  }
+}
+.information_list:nth-child(1) .information_subtitle {
+    width: 328px;
+}
+.information_list:nth-child(2) .information_subtitle {
+  width: 328px;
+}
+.information_list:nth-child(3) .information_subtitle {
+    width: 328px;
 }
