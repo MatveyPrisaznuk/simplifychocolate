@@ -78,6 +78,14 @@
       font-weight: 500;
       line-height: 1.14285714286;
       letter-spacing: -0.28px;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $button-color;
     }
   }
 
@@ -96,6 +104,20 @@
       height: 24px;
       fill: transparent;
       stroke: $text-color;
+      transition-property: stroke;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+      stroke: $button-color;
+    }
+
+    &__link:focus {
+      .socialbox__icon {
+        stroke: $button-color;
+      }
     }
   }
 
