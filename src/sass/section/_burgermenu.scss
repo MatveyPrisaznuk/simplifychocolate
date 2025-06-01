@@ -1,0 +1,119 @@
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu {
+  width: 220px;
+  height: 812px;
+  background: $footerbackground-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  @media screen and (min-width: 736px) {
+    width: 290px;
+    height: 1024px;
+  }
+
+  &__buttonclose {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    stroke: $desctext-color;
+
+    @media screen and (min-width: 736px) {
+      top: 24px;
+      right: 32px;
+    }
+
+    &:hover,
+    &:focus {
+      .menu__iconclose {
+        stroke: $button-color;
+      }
+    }
+  }
+
+  &__iconclose {
+    width: 28px;
+    height: 28px;
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__bill {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 136px;
+    margin-left: 50px;
+    margin-right: 46px;
+
+    @media screen and (min-width: 736px) {
+      margin-top: 156px;
+      margin-left: 85px;
+      margin-right: 81px;
+    }
+  }
+
+  .bill {
+    &__link {
+      color: $desctext-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.14285714286;
+      letter-spacing: -0.28px;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $button-color;
+      }
+    }
+  }
+
+  &__schedule {
+    display: flex;
+    gap: 18px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .schedule {
+    &__icon {
+      width: 22px;
+      height: 22px;
+      fill: transparent;
+      stroke: $desctext-color;
+      transition-property: stroke;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 736px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__link:focus,
+    &__link:hover {
+      .schedule__icon {
+        stroke: $button-color;
+      }
+    }
+  }
+}

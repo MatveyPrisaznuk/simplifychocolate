@@ -1,8 +1,14 @@
 .header {
   padding-top: 20px;
+  padding-bottom: 14px;
 
   @media screen and (min-width: 736px) {
     padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1168px) {
+    padding-bottom: 32px;
   }
 
   & > .container {
