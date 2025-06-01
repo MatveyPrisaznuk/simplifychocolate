@@ -72,10 +72,17 @@ body {
 
 .header {
   padding-top: 20px;
+  padding-bottom: 14px;
 }
 @media screen and (min-width: 736px) {
   .header {
     padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .header {
+    padding-bottom: 32px;
   }
 }
 .header > .container {
@@ -588,4 +595,108 @@ body {
     line-height: 1.2857142857;
     letter-spacing: -0.28px;
   }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu {
+  width: 220px;
+  height: 812px;
+  background: #1e1823;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+@media screen and (min-width: 736px) {
+  .menu {
+    width: 290px;
+    height: 1024px;
+  }
+}
+.menu__buttonclose {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  stroke: #ffffff;
+}
+@media screen and (min-width: 736px) {
+  .menu__buttonclose {
+    top: 24px;
+    right: 32px;
+  }
+}
+.menu__buttonclose:hover .menu__iconclose, .menu__buttonclose:focus .menu__iconclose {
+  stroke: #fd9222;
+}
+.menu__iconclose {
+  width: 28px;
+  height: 28px;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__bill {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 136px;
+  margin-left: 50px;
+  margin-right: 46px;
+}
+@media screen and (min-width: 736px) {
+  .menu__bill {
+    margin-top: 156px;
+    margin-left: 85px;
+    margin-right: 81px;
+  }
+}
+.menu .bill__link {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1428571429;
+  letter-spacing: -0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu .bill__link:hover, .menu .bill__link:focus {
+  color: #fd9222;
+}
+.menu__schedule {
+  display: flex;
+  gap: 18px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.menu .schedule__icon {
+  width: 22px;
+  height: 22px;
+  fill: transparent;
+  stroke: #ffffff;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 736px) {
+  .menu .schedule__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.menu .schedule__link:focus .schedule__icon, .menu .schedule__link:hover .schedule__icon {
+  stroke: #fd9222;
 }/*# sourceMappingURL=main.css.map */
