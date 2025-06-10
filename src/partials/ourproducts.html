@@ -1,59 +1,112 @@
 <section class="ourproducts">
-    <div class="container">
-        <h2>OUR <span>PRODUCTS</span></h2>
+  <div class="container">
+    <h2 class="ourproducts__subject">
+      OUR <span class="ourproducts__span">PRODUCTS</span>
+    </h2>
     <ul class="ourproducts__list">
-        <li class="ourproducts__item">
-            <picture>
-            <source src="../img/desktop/orange-desktop@1x.webp 1x, ../img/desktop/orange-desktop@2x.webp 2x">
-            <source src="../img/tablet/orange-tablet@1x.webp 1x, ../img/tablet/orange-tablet@2x.webp 2x">
-            <img src="../img/desktop/orange-desktop@1x.webp" alt="chocolate" class="ourproducts__img">
-            </picture>
-            <h3 class="ourproducts__title">ORANGE</h3>
-            <p class="ourproducts__text">Dark chocolate</p>
-            <button>45 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">APPLE&CRANBERRY</h3>
-            <p class="ourproducts__text">Milk chocolate</p>
-            <button>50 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">LIME&SEA SALT</h3>
-            <p class="ourproducts__text">Dark chocolate</p>
-            <button>66 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">PINEAPPLE</h3>
-            <p class="ourproducts__text">Dark chocolate</p>
-            <button>54 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">CLASSIC</h3>
-            <p class="ourproducts__text">Milk chocolate</p>
-            <button>45 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">HONEY</h3>
-            <p class="ourproducts__text">Milk chocolate</p>
-            <button>50 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">ROASTED FRUITS</h3>
-            <p class="ourproducts__text">Dark chocolate</p>
-            <button>66 UAH</button>
-        </li>
-        <li class="ourproducts__item">
-            <img src="" alt="chocolate" class="ourproducts__img">
-            <h3 class="ourproducts__title">CLASSIC</h3>
-            <p class="ourproducts__text">White chocolate</p>
-            <button>54 UAH</button>
-        </li>
+      <li class="ourproducts__item">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/orange-desktop@1x.webp 1x,
+              ./img/desktop/orange-desktop@2x.webp 2x
+            "
+            media="(min-width:1168px)"
+          />
+          <source
+            srcset="
+              ./img/tablet/orange-tablet@1x.webp 1x,
+              ./img/tablet/orange-tablet@2x.webp 2x
+            "
+            media="(min-width:736px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/orange-mobile@1x.webp 1x,
+              ./img/mobile/orange-mobile@2x.webp 2x
+            "
+            media="(max-width:735px)"
+          />
+          <img
+            src="./img/desktop/orange-desktop@1x.webp"
+            alt="chocolate"
+            class="ourproducts__img"
+          />
+        </picture>
+        <h3 class="ourproducts__title">ORANGE</h3>
+        <p class="ourproducts__text">Dark chocolate</p>
+        <button class="ourproducts__btn">45 UAH</button>
+      </li>
+      <li class="ourproducts__item">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/apple-desktop@1x.webp 1x,
+              ./img/desktop/apple-desktop@2x.webp 2x
+            "
+            media="(min-width:1168px)"
+          />
+          <source
+            srcset="
+              ./img/tablet/apple-tablet@1x.webp 1x,
+              ./img/tablet/apple-tablet@2x.webp 2x
+            "
+            media="(min-width:736px)"
+          />
+          <img
+            src="./img/desktop/apple-desktop@1x.webp"
+            alt="chocolate"
+            class="ourproducts__img"
+          />
+        </picture>
+        <h3 class="ourproducts__title">APPLE&CRANBERRY</h3>
+        <p class="ourproducts__text">Milk chocolate</p>
+        <button class="ourproducts__btn">50 UAH</button>
+      </li>
+      <li class="ourproducts__item">
+        <picture>
+          <source
+            src="./img/desktop/lime-desktop@1x.webp 1x, ./img/desktop/lime-desktop@2x.webp 2x"
+            media="(min-width:1168px)"
+          />
+          <img
+            src="./img/desktop/lime-desktop@1x.webp"
+            alt="chocolate"
+            class="ourproducts__img"
+          />
+        </picture>
+        <h3 class="ourproducts__title">LIME&SEA SALT</h3>
+        <p class="ourproducts__text">Dark chocolate</p>
+        <button class="ourproducts__btn">66 UAH</button>
+      </li>
+      <li class="ourproducts__item">
+        <picture>
+          <source
+            src="./img/desktop/lineapple-desktop@1x.webp 1x, ./img/desktop/lineapple-desktop@2x.webp 2x"
+            media="(min-width:1168px)"
+          />
+          <img
+            src="./img/desktop/lineapple-desktop@1x.webp"
+            alt="chocolate"
+            class="ourproducts__img"
+          />
+        </picture>
+
+        <h3 class="ourproducts__title">PINEAPPLE</h3>
+        <p class="ourproducts__text">Dark chocolate</p>
+        <button class="ourproducts__btn">54 UAH</button>
+      </li>
     </ul>
-</div>
+    <ul class="ourproducts__nomenclature">
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+      <li class="nomenclature__item"></li>
+    </ul>
+  </div>
 </section>
