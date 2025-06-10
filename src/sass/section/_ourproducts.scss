@@ -1,0 +1,133 @@
+.ourproducts {
+  &__subject {
+    color: $text-color;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    @media screen and (min-width: 736px) {
+      letter-spacing: -0.72px;
+      line-height: 1.16;
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+  }
+  &__span {
+    color: $button-color;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    @media screen and (min-width: 736px) {
+      letter-spacing: -0.72px;
+      line-height: 1.16;
+      font-size: 24px;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 270px;
+    height: 364px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+  }
+  &__item:nth-child(2) {
+    display: none;
+
+    @media screen and (min-width: 736px) {
+      display: flex;
+    }
+  }
+  &__item:nth-child(3) {
+    display: none;
+
+    @media screen and (min-width: 1168px) {
+      display: flex;
+    }
+  }
+  &__item:nth-child(4) {
+    display: none;
+
+    @media screen and (min-width: 1168px) {
+      display: flex;
+    }
+  }
+
+  &__img {
+    width: 230px;
+    height: 201px;
+    margin-bottom: 8px;
+  }
+  &__title {
+    color: $text-color;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33; /* 133.333% */
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  &__text {
+    color: rgba(17, 17, 17, 0.7);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16; /* 116.667% */
+    letter-spacing: -0.24px;
+    margin-bottom: 18px;
+  }
+  &__btn {
+    color: $text-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    display: flex;
+    padding: 8px 20px;
+    align-items: flex-start;
+    gap: 14px;
+
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: $background-color;
+  }
+
+  &__nomenclature {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 13px;
+    @media screen and (min-width: 736px) {
+      margin-top: 32px;
+    }
+  }
+
+  .nomenclature__item {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.1);
+    border-radius: 50px;
+    &:nth-child(1) {
+      width: 28px;
+      height: 13px;
+      background-color: $button-color;
+    }
+  }
+}
