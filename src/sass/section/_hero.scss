@@ -5,7 +5,7 @@
     background-image: url(../img/mobile/hero-mobile@1x.webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 335px, 621px;
+    background-size: cover;
     border-radius: 25px;
 
     @media (min-device-pixel-ratio: 2),
@@ -90,9 +90,14 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1.21;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus, &:hover{
       color: #FD9222;
-      background: #FCF1E0;
+      background-color: #FCF1E0;
     }
     @media screen and (min-width: 736px) {
       padding: 14px 40px;
@@ -107,6 +112,10 @@
     font-weight: 600;
     line-height: 1.21;
     outline: 1px solid $desctext-color;
+
+    transition-property: color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     &:focus, &:hover{
       color: #FD9222;
@@ -129,6 +138,22 @@
     width: 28px;
     height: 28px;
     margin-left: 12px;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, &:hover{
+      fill: $desctext-color;
+      background-color: #FD9222;
+
+    }
+
+    // &__svg:focus, &__svg:hover + &__link:focus, &__link:hover{
+    //   color: #FD9222;
+    //   fill: $desctext-color;
+    //   background-color: #FD9222;
+    // }
 
     @media screen and (min-width: 736px) {
       padding: 8px;
