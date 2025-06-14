@@ -390,7 +390,6 @@ body {
     padding-bottom: 50px;
   }
 }
-
 .information__item {
   display: flex;
   flex-wrap: wrap;
@@ -400,24 +399,20 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .information__list {
   flex: 1 1 calc(33.333% - 20px);
   min-width: 280px;
   box-sizing: border-box;
   padding-right: 20px;
 }
-
 .information__border {
   width: 1px;
   height: 124px;
   background-color: #d9d9d9;
 }
-
 .information__list:last-child {
   border-right: none;
 }
-
 .information__icon {
   width: 62px;
   height: 62px;
@@ -427,17 +422,16 @@ body {
   margin-bottom: 20px;
   fill: #fd9222;
 }
-
 .information__caption {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 12px;
 }
-
 .information__subtitle {
   font-size: 16px;
   line-height: 1.6;
   color: #cfcfcf;
+  width: 100%;
 }
 @media screen and (min-width: 736px) {
   .information__subtitle {
@@ -445,7 +439,6 @@ body {
     height: 160px;
   }
 }
-
 .information__item {
   display: flex;
   flex-wrap: wrap;
@@ -455,7 +448,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 @media screen and (min-width: 1168px) {
   .information__list:not(:last-child)::after {
     content: "";
@@ -472,15 +464,13 @@ body {
     padding-right: 40px;
   }
 }
-.information__list:nth-child(1) .information_subtitle {
+.information__list:nth-child(1) .information__subtitle {
   width: 328px;
 }
-
-.information__list:nth-child(2) .information_subtitle {
+.information__list:nth-child(2) .information__subtitle {
   width: 328px;
 }
-
-.information__list:nth-child(3) .information_subtitle {
+.information__list:nth-child(3) .information__subtitle {
   width: 328px;
 }
 
@@ -764,6 +754,176 @@ body {
     line-height: 1.2857142857;
     letter-spacing: -0.28px;
   }
+}
+
+.howmade {
+  padding: 128px 0;
+  background-color: #fafafa;
+}
+.howmade__headline {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 736px) {
+  .howmade__headline {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .howmade__headline {
+    font-size: 28px;
+  }
+}
+.howmade__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1168px) {
+  .howmade__page {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
+.howmade__image {
+  width: 335px;
+  max-width: 600px;
+  border-radius: 12px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 736px) {
+  .howmade__image {
+    width: 614px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .howmade__image {
+    width: 600px;
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 736px) and (max-width: 1168px) {
+  .howmade__image {
+    max-width: 100%;
+  }
+}
+.howmade__items {
+  list-style: disc;
+  padding-left: 20px;
+}
+.howmade__item {
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+@media (min-width: 736px) {
+  .howmade__item {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1168px) {
+  .howmade__item {
+    font-size: 16px;
+  }
+}
+.howmade__box {
+  padding: 20px 14px;
+  border-radius: 15px;
+  background: #fff;
+}
+@media (min-width: 736px) {
+  .howmade__box {
+    width: 614px;
+  }
+}
+@media (min-width: 1168px) {
+  .howmade__box {
+    width: 516px;
+    padding: 32px;
+  }
+}
+.howmade__subtitle {
+  font-size: 14px;
+  width: 305px;
+}
+@media (min-width: 736px) {
+  .howmade__subtitle {
+    width: 464px;
+  }
+}
+@media (min-width: 1168px) {
+  .howmade__subtitle {
+    width: auto;
+  }
+}
+.howmade__headlinespan {
+  color: #fd9222;
+}
+.howmade__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-align: left;
+}
+@media screen and (min-width: 736px) {
+  .howmade__title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .howmade__title {
+    font-size: 22px;
+  }
+}
+.howmade__title__highlight {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media screen and (min-width: 736px) {
+  .howmade__title__highlight {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .howmade__title__highlight {
+    font-size: 22px;
+  }
+}
+.howmade__video {
+  position: relative;
+  display: inline-block;
+}
+.howmade__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  cursor: pointer;
+}
+.howmade__button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 16px solid white;
 }
 
 .ourproducts__subject {
