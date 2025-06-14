@@ -4,7 +4,7 @@
 }
 
 .modaltwo {
-  top: 4000px;
+  top: 5500px;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
@@ -29,11 +29,11 @@
     width: 609px;
     padding: 48px;
     height: 1058px;
-    top: 3000px;
+    top: 4200px;
   }
 
    @media screen and (min-width: 1168px) {
-    top: 2200px;
+    top: 3000px;
   }
 
   &__buttonclose {
