@@ -1,12 +1,12 @@
-.is-hiddenmodal {
+.is-hiddenmodaltwo {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal {
-  top: 600px;
+.modaltwo {
+  top: 4000px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   position: absolute;
   width: 90%;
   border-radius: 4px;
@@ -29,6 +29,11 @@
     width: 609px;
     padding: 48px;
     height: 1058px;
+    top: 3000px;
+  }
+
+   @media screen and (min-width: 1168px) {
+    top: 2200px;
   }
 
   &__buttonclose {
