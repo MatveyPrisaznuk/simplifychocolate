@@ -142,6 +142,9 @@
     padding: 12px 28px;
     border-radius: 100px;
     background: $button-color;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 736px) {
       font-size: 18px;
@@ -150,5 +153,12 @@
       width: 162px;
       height: 50px;
     }
+  }
+
+  &__button:hover,
+  &__button:focus {
+    border-radius: 100px;
+    background-color: #fcf1e0;
+    color: $button-color;
   }
 }
