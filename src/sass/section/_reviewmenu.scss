@@ -1,0 +1,28 @@
+.is-hiddenreview {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.reviewmenu {
+  top: 5700px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 311px;
+  height: 471px;
+  background: $background-color;
+  border-radius: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+
+  @media screen and (min-width: 736px) {
+    width: 517px;
+    height: 631px;
+    top: 4500px;
+  }
+
+  @media screen and (min-width: 1168px) {
+    top: 3300px;
+  }
+}
