@@ -208,9 +208,22 @@ body {
   }
 }
 
+.hero {
+  padding-bottom: 71px;
+}
+@media screen and (min-width: 736px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .hero {
+    padding-bottom: 72px;
+  }
+}
 .hero .container {
   padding-top: 395px;
-  padding-bottom: 40px;
+  padding-bottom: 21px;
   background-image: url(../img/mobile/hero-mobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -224,8 +237,9 @@ body {
 }
 @media screen and (min-width: 736px) {
   .hero .container {
-    background-size: cover;
     padding-top: 671px;
+    padding-bottom: 40px;
+    background-size: cover;
     background-image: url(../img/tablet/hero-tablet@1x.webp);
   }
 }
@@ -305,8 +319,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__buttonbuy:focus, .hero__buttonbuy:hover {
-  color: #FD9222;
-  background-color: #FCF1E0;
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
 @media screen and (min-width: 736px) {
   .hero__buttonbuy {
@@ -326,8 +340,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__buttonhow:focus, .hero__buttonhow:hover {
-  color: #FD9222;
-  outline: 1px solid #FD9222;
+  color: #fd9222;
+  outline: 1px solid #fd9222;
 }
 @media screen and (min-width: 736px) {
   .hero__buttonhow {
@@ -352,7 +366,7 @@ body {
 }
 .hero__svg:focus, .hero__svg:hover {
   fill: #ffffff;
-  background-color: #FD9222;
+  background-color: #fd9222;
 }
 @media screen and (min-width: 736px) {
   .hero__svg {
@@ -1227,6 +1241,167 @@ body {
   border-radius: 100px;
   background-color: #fcf1e0;
   color: #fd9222;
+}
+
+.lovers {
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 736px) {
+  .lovers {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .lovers {
+    padding-bottom: 128px;
+  }
+}
+.lovers__title {
+  color: #fd9222;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 74px;
+}
+@media screen and (min-width: 736px) {
+  .lovers__title {
+    margin-bottom: 91px;
+  }
+}
+.lovers__span {
+  color: #111111;
+}
+.lovers__list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+@media screen and (min-width: 1168px) {
+  .lovers__list {
+    gap: 28px;
+  }
+}
+.lovers__item {
+  width: 335px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+  position: relative;
+}
+@media screen and (min-width: 1168px) {
+  .lovers__item {
+    width: 360px;
+    height: 200px;
+  }
+}
+.lovers__item:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 736px) {
+  .lovers__item:nth-child(2) {
+    display: block;
+  }
+}
+.lovers__item:nth-child(3) {
+  display: none;
+}
+@media screen and (min-width: 1168px) {
+  .lovers__item:nth-child(3) {
+    display: block;
+  }
+}
+.lovers__avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -42px;
+  left: 132px;
+}
+@media screen and (min-width: 1168px) {
+  .lovers__avatar {
+    left: 140px;
+  }
+}
+.lovers__subtitle {
+  color: #111111;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+.lovers__text {
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28; /* 128.571% */
+  letter-spacing: -0.28px;
+  width: 299px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 736px) {
+  .lovers__text {
+    width: 312px;
+  }
+}
+.lovers__box {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.lovers__btn {
+  display: flex;
+  padding: 12px 28px;
+  align-items: flex-start;
+  gap: 14px;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  color: #111111;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.21;
+}
+@media screen and (min-width: 736px) {
+  .lovers__btn {
+    display: flex;
+    padding: 14px 40px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+  }
+}
+.lovers__nomenclature {
+  display: flex;
+  gap: 13px;
+  margin-top: 20px;
+  justify-content: center;
+}
+@media screen and (min-width: 736px) {
+  .lovers__nomenclature {
+    margin-top: 32px;
+  }
+}
+
+.nomenclature__item {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 50px;
+}
+.nomenclature__item:nth-child(1) {
+  width: 28px;
+  height: 13px;
+  background-color: #fd9222;
 }
 
 .subscribe {
@@ -2361,5 +2536,217 @@ body {
     font-size: 18px;
     line-height: 1.2222222222;
     letter-spacing: -0.36px;
+  }
+}
+
+.is-hiddensubscribe {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.subscribemenu {
+  top: 6100px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 311px;
+  height: 350px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  padding: 201px 24px 32px 24px;
+  background-image: url(../img/mobile/bliss-mobile@1x.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 311px, 169px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .subscribemenu {
+    background-image: url(../img/mobile/bliss-mobile@2x.webp);
+  }
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu {
+    background-size: 538px, 196px;
+    width: 538px;
+    height: 412px;
+    top: 4900px;
+    padding: 236px 40px 40px 40px;
+    background-image: url(../img/tablet/bliss-tablet@1x.webp);
+  }
+}
+@media screen and (min-width: 736px) and (min-device-pixel-ratio: 2), screen and (min-width: 736px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 736px) and (min-resolution: 192dpi), screen and (min-width: 736px) and (min-resolution: 2dppx) {
+  .subscribemenu {
+    background-image: url(../img/tablet/bliss-tablet@2x.webp);
+  }
+}
+@media screen and (min-width: 1168px) {
+  .subscribemenu {
+    top: 3800px;
+    background-image: url(../img/desktop/bliss-desktop@1x.webp);
+  }
+}
+@media screen and (min-width: 1168px) and (min-device-pixel-ratio: 2), screen and (min-width: 1168px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1168px) and (min-resolution: 192dpi), screen and (min-width: 1168px) and (min-resolution: 2dppx) {
+  .subscribemenu {
+    background-image: url(../img/desktop/bliss-desktop@2x.webp);
+  }
+}
+.subscribemenu__buttonclose {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 14px;
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu__buttonclose {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.subscribemenu__buttonclose:hover .subscribemenu__iconclose, .subscribemenu__buttonclose:focus .subscribemenu__iconclose {
+  stroke: #fd9222;
+}
+.subscribemenu__iconclose {
+  stroke: #ffffff;
+  width: 24px;
+  height: 24px;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu__iconclose {
+    width: 28px;
+    height: 28px;
+  }
+}
+.subscribemenu__title {
+  width: 263px;
+  color: #111;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu__title {
+    width: 298px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1666666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+}
+.subscribemenu__spantextbox {
+  display: flex;
+  gap: 6px;
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu__spantextbox {
+    gap: 7px;
+  }
+}
+.subscribemenu__subtitle {
+  color: #fd9222;
+}
+.subscribemenu__smallform {
+  display: flex;
+  position: relative;
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu__smallform {
+    gap: 8px;
+  }
+}
+.subscribemenu .smallform__input {
+  width: 263px;
+  padding: 14px 18px;
+  border-radius: 25px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2142857143;
+  letter-spacing: -0.28px;
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu .smallform__input {
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2222222222;
+    letter-spacing: -0.36px;
+  }
+}
+.subscribemenu .smallform__button {
+  width: 100px;
+  padding: 14px 23px;
+  position: absolute;
+  right: 0px;
+  border-radius: 100px;
+  background-color: #fd9222;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2142857143;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 736px) {
+  .subscribemenu .smallform__button {
+    position: static;
+    width: 137px;
+    padding: 17px 40px;
+    border-radius: 100px;
+  }
+}
+.subscribemenu .smallform__button:hover, .subscribemenu .smallform__button:focus {
+  background-color: #FCF1E0;
+  color: #fd9222;
+}
+
+.is-hiddenreview {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.reviewmenu {
+  top: 5700px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 311px;
+  height: 471px;
+  background: #fafafa;
+  border-radius: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu {
+    width: 517px;
+    height: 631px;
+    top: 4500px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .reviewmenu {
+    top: 3300px;
   }
 }/*# sourceMappingURL=main.css.map */
