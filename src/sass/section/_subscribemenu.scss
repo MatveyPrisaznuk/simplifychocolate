@@ -1,0 +1,190 @@
+.is-hiddensubscribe {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.subscribemenu {
+  top: 6100px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  width: 311px;
+  height: 350px;
+  background-color: $background-color;
+  border-radius: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  padding: 201px 24px 32px 24px;
+
+  background-image: url(../img/mobile/bliss-mobile@1x.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 311px, 169px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/mobile/bliss-mobile@2x.webp);
+  }
+
+  @media screen and (min-width: 736px) {
+    background-size: 538px, 196px;
+    width: 538px;
+    height: 412px;
+    top: 4900px;
+    padding: 236px 40px 40px 40px;
+    background-image: url(../img/tablet/bliss-tablet@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/tablet/bliss-tablet@2x.webp);
+    }
+  }
+  @media screen and (min-width: 1168px) {
+    top: 3800px;
+    background-image: url(../img/desktop/bliss-desktop@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/desktop/bliss-desktop@2x.webp);
+    }
+  }
+
+  &__buttonclose {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+
+    @media screen and (min-width: 736px) {
+      top: 24px;
+      right: 24px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__buttonclose:hover,
+  &__buttonclose:focus {
+    .subscribemenu__iconclose {
+      stroke: $button-color;
+    }
+  }
+
+  &__iconclose {
+    stroke: $desctext-color;
+    width: 24px;
+    height: 24px;
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 736px) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__title {
+    width: 263px;
+    color: #111;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 736px) {
+      width: 298px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.16666666667;
+      letter-spacing: -0.72px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__spantextbox {
+    display: flex;
+    gap: 6px;
+
+    @media screen and (min-width: 736px) {
+      gap: 7px;
+    }
+  }
+
+  &__subtitle {
+    color: $button-color;
+  }
+
+  &__smallform {
+    display: flex;
+    position: relative;
+
+    @media screen and (min-width: 736px) {
+      gap: 8px;
+    }
+  }
+
+  .smallform {
+    &__input {
+      width: 263px;
+      padding: 14px 18px;
+      border-radius: 25px;
+      border: 1.5px solid rgba(17, 17, 17, 0.05);
+      box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+      color: black;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.21428571429;
+      letter-spacing: -0.28px;
+
+      @media screen and (min-width: 736px) {
+        padding: 14px 24px;
+        border-radius: 30px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.22222222222;
+        letter-spacing: -0.36px;
+      }
+    }
+
+    &__button {
+      width: 100px;
+      padding: 14px 23px;
+      position: absolute;
+      right: 0px;
+      border-radius: 100px;
+      background-color: $button-color;
+      color: $desctext-color;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.21428571429;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 736px) {
+        position: static;
+        width: 137px;
+        padding: 17px 40px;
+        border-radius: 100px;
+      }
+    }
+
+    &__button:hover,
+    &__button:focus {
+      background-color: #FCF1E0;
+      color: $button-color;
+    }
+  }
+}
