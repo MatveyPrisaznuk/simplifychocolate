@@ -4,7 +4,7 @@
 }
 
 .subscribemenu {
-  top: 6100px;
+  top: 6600px;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
@@ -32,7 +32,7 @@
     background-size: 538px, 196px;
     width: 538px;
     height: 412px;
-    top: 4900px;
+    top: 5500px;
     padding: 236px 40px 40px 40px;
     background-image: url(../img/tablet/bliss-tablet@1x.webp);
 
@@ -43,7 +43,7 @@
     }
   }
   @media screen and (min-width: 1168px) {
-    top: 3800px;
+    top: 4300px;
     background-image: url(../img/desktop/bliss-desktop@1x.webp);
 
     @media (min-device-pixel-ratio: 2),
@@ -169,9 +169,9 @@
       font-style: normal;
       font-weight: 600;
       line-height: 1.21428571429;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: background-color, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       @media screen and (min-width: 736px) {
         position: static;
@@ -183,7 +183,7 @@
 
     &__button:hover,
     &__button:focus {
-      background-color: #FCF1E0;
+      background-color: #fcf1e0;
       color: $button-color;
     }
   }
