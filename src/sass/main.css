@@ -1518,6 +1518,8 @@ body {
   top: 0;
   right: 0;
   z-index: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 736px) {
   .menu {
@@ -1587,8 +1589,14 @@ body {
   display: flex;
   gap: 18px;
   position: absolute;
-  bottom: 20px;
+  bottom: 70px;
   left: 20px;
+}
+@media screen and (min-width: 736px) {
+  .menu__schedule {
+    bottom: 280px;
+    left: 32px;
+  }
 }
 .menu .schedule__icon {
   width: 22px;
@@ -2545,7 +2553,7 @@ body {
 }
 
 .subscribemenu {
-  top: 6100px;
+  top: 6600px;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
@@ -2572,7 +2580,7 @@ body {
     background-size: 538px, 196px;
     width: 538px;
     height: 412px;
-    top: 4900px;
+    top: 5500px;
     padding: 236px 40px 40px 40px;
     background-image: url(../img/tablet/bliss-tablet@1x.webp);
   }
@@ -2584,7 +2592,7 @@ body {
 }
 @media screen and (min-width: 1168px) {
   .subscribemenu {
-    top: 3800px;
+    top: 4300px;
     background-image: url(../img/desktop/bliss-desktop@1x.webp);
   }
 }
@@ -2716,7 +2724,7 @@ body {
   }
 }
 .subscribemenu .smallform__button:hover, .subscribemenu .smallform__button:focus {
-  background-color: #FCF1E0;
+  background-color: #fcf1e0;
   color: #fd9222;
 }
 
@@ -2726,7 +2734,7 @@ body {
 }
 
 .reviewmenu {
-  top: 5700px;
+  top: 6300px;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
@@ -2737,16 +2745,233 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
+  padding: 32px 24px 32px 24px;
 }
 @media screen and (min-width: 736px) {
   .reviewmenu {
     width: 517px;
     height: 631px;
-    top: 4500px;
+    top: 5000px;
+    padding: 40px 40px 40px 40px;
   }
 }
 @media screen and (min-width: 1168px) {
   .reviewmenu {
-    top: 3300px;
+    top: 3800px;
+  }
+}
+.reviewmenu__buttonclose {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu__buttonclose {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.reviewmenu__iconclose {
+  width: 24px;
+  height: 24px;
+  stroke: #111111;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu__iconclose {
+    width: 28px;
+    height: 28px;
+  }
+}
+.reviewmenu__buttonclose:hover .reviewmenu__iconclose, .reviewmenu__buttonclose:focus .reviewmenu__iconclose {
+  stroke: #fd9222;
+}
+.reviewmenu__title {
+  width: 255px;
+  color: #111111;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu__title {
+    width: 298px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+}
+.reviewmenu__boxspan {
+  display: flex;
+  gap: 5px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu__boxspan {
+    display: inline;
+  }
+}
+.reviewmenu__subtitle {
+  color: #fd9222;
+}
+.reviewmenu__mediumform {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu__mediumform {
+    gap: 19px;
+  }
+}
+.reviewmenu .mediumform__basicinput {
+  width: 225px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2142857143;
+  letter-spacing: -0.28px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .mediumform__basicinput {
+    width: 387px;
+    padding: 22px 24px;
+    border-radius: 13px;
+    font-size: 18px;
+    line-height: 1.2222222222;
+    letter-spacing: -0.36px;
+  }
+}
+.reviewmenu .mediumform__phonebox {
+  position: relative;
+}
+.reviewmenu .mediumform__textinput {
+  width: 225px;
+  padding: 14px 18px 41px 18px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2142857143;
+  letter-spacing: -0.28px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .mediumform__textinput {
+    margin-bottom: 0px;
+    width: 387px;
+    padding: 22px 24px 49px 24px;
+    border-radius: 13px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+}
+.reviewmenu .mediumform__submit {
+  width: 93px;
+  padding: 12px 28px;
+  border-radius: 100px;
+  background: #fd9222;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2142857143;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .mediumform__submit {
+    padding: 14px 40px;
+    border-radius: 100px;
+    width: 117px;
+  }
+}
+.reviewmenu .phonebox__phoneinput {
+  width: 137px;
+  padding: 14px 18px 14px 106px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2142857143;
+  letter-spacing: -0.28px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .phonebox__phoneinput {
+    width: 234px;
+    padding: 22px 24px 22px 177px;
+    border-radius: 13px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2222222222;
+    letter-spacing: -0.36px;
+  }
+}
+.reviewmenu .phonebox__svgbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  left: 18px;
+  top: 12px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .phonebox__svgbox {
+    gap: 18px;
+    left: 24px;
+    top: 19px;
+  }
+}
+.reviewmenu .phonebox__svgbox::after {
+  content: " ";
+  height: 25px;
+  width: 1px;
+  background-color: #e2e2e2;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .phonebox__svgbox::after {
+    height: 32px;
+  }
+}
+.reviewmenu .phonebox__svg {
+  width: 24px;
+  height: 18px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .phonebox__svg {
+    width: 32px;
+    height: 24px;
+  }
+}
+.reviewmenu .phonebox__text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2142857143;
+  letter-spacing: -0.28px;
+}
+@media screen and (min-width: 736px) {
+  .reviewmenu .phonebox__text {
+    font-size: 18px;
+    line-height: 1.2222222222;
+    letter-spacing: -0.36px;
   }
 }/*# sourceMappingURL=main.css.map */
