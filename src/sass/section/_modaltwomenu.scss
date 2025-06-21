@@ -32,7 +32,7 @@
     top: 4200px;
   }
 
-   @media screen and (min-width: 1168px) {
+  @media screen and (min-width: 1168px) {
     top: 3000px;
   }
 
@@ -451,11 +451,20 @@
       line-height: 1.21428571429;
       padding: 12px 28px;
       border-radius: 100px;
-      background: $button-color;
+      background-color: $button-color;
+      transition-property: background-color, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       @media screen and (min-width: 736px) {
         padding: 14px 40px;
       }
+    }
+
+    &__submit:hover,
+    &__submit:focus {
+      background-color: #fcf1e0;
+      color: $button-color;
     }
   }
 
