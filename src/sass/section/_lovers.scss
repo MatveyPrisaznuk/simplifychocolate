@@ -17,6 +17,9 @@
     margin-bottom: 74px;
     @media screen and (min-width: 736px) {
       margin-bottom: 91px;
+      font-size: 24px;
+      line-height: 1.16; /* 116.667% */
+      letter-spacing: -0.72px;
     }
   }
   &__span {
@@ -110,6 +113,9 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1.21;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 736px) {
       display: flex;
@@ -119,9 +125,15 @@
       font-size: 18px;
       font-weight: 600;
       line-height: 1.22;
+
+      &:hover,
+      &:focus {
+        background-color: $button-color;
+        color: $desctext-color;
+      }
     }
   }
-  &__nomenclature{
+  &__nomenclature {
     display: flex;
     gap: 13px;
     margin-top: 20px;
