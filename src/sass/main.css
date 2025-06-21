@@ -260,6 +260,16 @@ body {
     background-image: url(../img/desktop/hero-desktop@2x.webp);
   }
 }
+.hero__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 736px) {
+  .hero__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .hero__title {
   color: #ffffff;
   font-size: 20px;
@@ -352,6 +362,18 @@ body {
   display: flex;
   align-items: center;
 }
+.hero__link:hover .hero__cell, .hero__link:focus .hero__cell {
+  color: #fd9222;
+}
+.hero__link:hover .hero__svg, .hero__link:focus .hero__svg {
+  fill: #ffffff;
+  background-color: #fd9222;
+}
+.hero__cell {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .hero__svg {
   border-radius: 50px;
   background-color: #ffffff;
@@ -363,10 +385,6 @@ body {
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__svg:focus, .hero__svg:hover {
-  fill: #ffffff;
-  background-color: #fd9222;
 }
 @media screen and (min-width: 736px) {
   .hero__svg {
@@ -1269,6 +1287,9 @@ body {
 @media screen and (min-width: 736px) {
   .lovers__title {
     margin-bottom: 91px;
+    font-size: 24px;
+    line-height: 1.16; /* 116.667% */
+    letter-spacing: -0.72px;
   }
 }
 .lovers__span {
@@ -1369,6 +1390,9 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.21;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 736px) {
   .lovers__btn {
@@ -1378,6 +1402,10 @@ body {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.22;
+  }
+  .lovers__btn:hover, .lovers__btn:focus {
+    background-color: #fd9222;
+    color: #ffffff;
   }
 }
 .lovers__nomenclature {
@@ -1512,7 +1540,7 @@ body {
 
 .menu {
   width: 220px;
-  height: 812px;
+  height: 100vh;
   background: #1e1823;
   position: fixed;
   top: 0;
@@ -1524,7 +1552,6 @@ body {
 @media screen and (min-width: 736px) {
   .menu {
     width: 290px;
-    height: 1024px;
   }
 }
 .menu__buttonclose {
@@ -1594,7 +1621,6 @@ body {
 }
 @media screen and (min-width: 736px) {
   .menu__schedule {
-    bottom: 280px;
     left: 32px;
   }
 }
@@ -2047,12 +2073,19 @@ body {
   line-height: 1.2142857143;
   padding: 12px 28px;
   border-radius: 100px;
-  background: #fd9222;
+  background-color: #fd9222;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 736px) {
   .modal .beadroll__submit {
     padding: 14px 40px;
   }
+}
+.modal .beadroll__submit:hover, .modal .beadroll__submit:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 .modal .svgbox__image {
   width: 24px;
@@ -2515,12 +2548,19 @@ body {
   line-height: 1.2142857143;
   padding: 12px 28px;
   border-radius: 100px;
-  background: #fd9222;
+  background-color: #fd9222;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 736px) {
   .modaltwo .beadroll__submit {
     padding: 14px 40px;
   }
+}
+.modaltwo .beadroll__submit:hover, .modaltwo .beadroll__submit:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 .modaltwo .svgbox__image {
   width: 24px;
@@ -2888,11 +2928,14 @@ body {
   width: 93px;
   padding: 12px 28px;
   border-radius: 100px;
-  background: #fd9222;
+  background-color: #fd9222;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2142857143;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 736px) {
   .reviewmenu .mediumform__submit {
@@ -2900,6 +2943,10 @@ body {
     border-radius: 100px;
     width: 117px;
   }
+}
+.reviewmenu .mediumform__submit:hover, .reviewmenu .mediumform__submit:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 .reviewmenu .phonebox__phoneinput {
   width: 137px;
@@ -2915,8 +2962,8 @@ body {
 }
 @media screen and (min-width: 736px) {
   .reviewmenu .phonebox__phoneinput {
-    width: 234px;
-    padding: 22px 24px 22px 177px;
+    width: 254px;
+    padding: 22px 24px 22px 157px;
     border-radius: 13px;
     color: black;
     font-size: 18px;
