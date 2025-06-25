@@ -799,7 +799,6 @@ html {
 }
 @media screen and (min-width: 736px) {
   .howmade {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
@@ -813,15 +812,16 @@ html {
   font-size: 20px;
   margin-bottom: 32px;
   text-transform: uppercase;
+  color: #111;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -0.6px;
 }
 @media screen and (min-width: 736px) {
   .howmade__headline {
     font-size: 24px;
-  }
-}
-@media screen and (min-width: 1168px) {
-  .howmade__headline {
-    font-size: 28px;
+    line-height: 1.16; /* 116.667% */
+    letter-spacing: -0.72px;
   }
 }
 .howmade__page {
