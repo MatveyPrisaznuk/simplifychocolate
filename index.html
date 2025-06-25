@@ -19,7 +19,7 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
         <div class="header__logobox">
             <a href="#" class="header__logotext">SIMPLY CHOCOLATE</a>
@@ -77,7 +77,7 @@
           <button class="hero__buttonbuy" type="button" data-modal-open>Buy now</button>
         </li>
         <li class="hero__item">
-          <button class="hero__buttonhow" type="button">How it’s made</button>
+          <a class="hero__buttonhow" type="button" href="#howmade">How it’s made</a>
         </li>
       </ul>
       <a href="#footer" class="hero__link">
@@ -279,7 +279,7 @@
         </ul>
     </div>
 </section>
-  <section class="howmade">
+  <section class="howmade" id="howmade">
   <div class="container">
     <h2 class="howmade__headline">
       HOW IT’S <span class="howmade__headlinespan">MADE?</span>
@@ -351,7 +351,7 @@
   </div>
 </section>
 
-  <section class="ourproducts">
+  <section class="ourproducts" id="ourproducts">
   <div class="container">
     <h2 class="ourproducts__subject">
       OUR <span class="ourproducts__span">PRODUCTS</span>
@@ -449,7 +449,7 @@
   </div>
 </section>
 
-  <section class="topsellers">
+  <section class="topsellers" id="topsellers">
     <div class="container">
         <h2 class="topsellers__title">
             <span class="topsellers__subtitle">tOp </span>Sellers
@@ -497,7 +497,7 @@
         </div>
     </div>
 </section>
-  <section class="lovers">
+  <section class="lovers" id="lovers">
   <div class="container">
     <h2 class="lovers__title">
       chocolate <span class="lovers__span">is loved</span>
@@ -596,7 +596,64 @@
   </div>
 </section>
 
-  
+  <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <h2 class="footer__title">
+        <span class="footer__span">Chocolate</span> a delicious cure for a bad
+        day
+      </h2>
+      <div class="footer__box">
+        <div class="footer__contact">
+          <p class="footer__text">Contact us</p>
+          <div class="footer__wrap">
+            <a class="footer__link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+            <a class="footer__link" href="mailto:simplychoc@gmail.com"
+              >simplychoc@gmail.com</a
+            >
+          </div>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <svg class="footer__svg">
+              <use href="../img/symbol-defs.svg#icon-instagramdesktop"></use>
+            </svg>
+          </li>
+          <li class="footer__item">
+            <svg class="footer__svg">
+              <use href="../img/symbol-defs.svg#icon-twitterdesktop"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <div>
+      <nav class="footer__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="footer__link" href="#header">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="footer__link" href="#howmade">How it’s made?</a>
+          </li>
+          <li class="nav__item">
+            <a class="footer__link" href="#ourproducts">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a class="footer__link" href="#topsellers">Top sellers</a>
+          </li>
+          <li class="nav__item">
+            <a class="footer__link" href="#lovers">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
   <div class="menu is-hidden" data-menu>
     <button type="button" class="menu__buttonclose" data-menu-close>
         <svg class="menu__iconclose">
