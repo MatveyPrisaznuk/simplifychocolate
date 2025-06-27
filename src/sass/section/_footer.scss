@@ -94,6 +94,14 @@
     align-items: center;
     gap: 14px;
   }
+  &__linksvg:hover, &__linksvg:focus{
+    .footer__svg {
+      stroke: $button-color;
+      transition-property: stroke;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
   &__svg {
     width: 22px;
     height: 22px;
@@ -101,14 +109,6 @@
     @media screen and (min-width: 736px) {
       width: 24px;
       height: 24px;
-    }
-
-    &:hover,
-    &:focus {
-      stroke: $button-color;
-      transition-property: stroke;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   &__line {
