@@ -1650,6 +1650,12 @@ html {
   align-items: center;
   gap: 14px;
 }
+.footer__linksvg:hover .footer__svg, .footer__linksvg:focus .footer__svg {
+  stroke: #fd9222;
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer__svg {
   width: 22px;
   height: 22px;
@@ -1660,12 +1666,6 @@ html {
     width: 24px;
     height: 24px;
   }
-}
-.footer__svg:hover, .footer__svg:focus {
-  stroke: #fd9222;
-  transition-property: stroke;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__line {
   height: 1px;
